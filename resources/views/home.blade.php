@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                        <li>To check our list of users, please use the about page from the drop-down menu.</li>
                 </div>
             </div>
         </div>
