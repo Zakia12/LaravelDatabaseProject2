@@ -37,4 +37,9 @@ class HomeController extends Controller
 
         return view('about', ['users'=> $users]);
     }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }
