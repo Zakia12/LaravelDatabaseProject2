@@ -16,9 +16,9 @@
 
                         You are logged in!
 
-                        <li>To check our list of users, please use the about page from the drop-down menu.</li>
                         <li>We are always there to answer any questions. You can contact us by filling out the 'Contact
                             Form' accessible from the drop-down menu.
+                            <li>To check our list of users, please use the about page from the drop-down menu.</li>
                         </li>
                     </div>
                 </div>
