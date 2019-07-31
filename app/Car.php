@@ -8,3 +8,4 @@ class Car extends Model
 {
     //
 }
+
