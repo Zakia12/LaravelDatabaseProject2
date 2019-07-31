@@ -7,19 +7,18 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
 
-class DeleteUserTest extends TestCase
+class CountUserTest extends TestCase
 {
     /**
      * A basic unit test example.
      *
      * @return void
      */
-    public function testDeleteUser()
+    public function testCountUser()
     {
-        $user = User::all()->last();
-
-        $this->delete($user);
-
+        $rowcount = count(User::get());
+        $Usercount = $rowcount;
+        $this->countOf($Usercount);
         $this->assertTrue(true);
     }
 }
