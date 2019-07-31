@@ -14,11 +14,11 @@ class CountUserTest extends TestCase
      *
      * @return void
      */
-    public function testCountUser()
+    public function testUserCar()
     {
-        $rowcount = count(User::get());
-        $Usercount = $rowcount;
-        $this->countOf($Usercount);
+        $rowCount = count(User::get());
+        $UserCount = $rowCount;
+        $this->countOf($UserCount);
         $this->assertTrue(true);
     }
 }
