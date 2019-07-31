@@ -6,19 +6,18 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Car;
-use Carbon\Carbon;
 
-
-class InsertCarTst extends TestCase
+class CarYearInteger extends TestCase
 {
     /**
      * A basic unit test example.
      *
      * @return void
      */
-    public function testInsertCar()
+    public function testCarYearInteger()
     {
-        $car = factory(Car::class)->create();
-        $this->assertTrue($car->save());
+        $car = Car::inRandomOrder()->first();
+
+        $this->assertIsInt($car->Year);
     }
 }
