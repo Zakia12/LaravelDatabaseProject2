@@ -9,7 +9,7 @@ use App\Car;
 use Carbon\Carbon;
 
 
-class InsertCarTst extends TestCase
+class InsertCarTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -20,5 +20,6 @@ class InsertCarTst extends TestCase
     {
         $car = factory(Car::class)->create();
         $this->assertTrue($car->save());
+
     }
 }
