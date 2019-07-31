@@ -38,4 +38,11 @@ class CarTest extends TestCase
 
         $this->assertTrue(true);
     }
+
+    public function testCarMakeTypes()
+    {
+        $car = Car::inRandomOrder()->first();
+
+        $this->assertContains($car->make, ['ford','honda','toyota']);
+    }
 }

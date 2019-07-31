@@ -18,7 +18,7 @@ class CreateCarsTable extends Migration
             $table->integer('user_id');
             $table->enum( 'make',['ford', 'honda','toyota']);
             $table->string('model');
-            $table->text('Year');
+            $table->integer('Year');
             $table->timestamps();
         });
     }

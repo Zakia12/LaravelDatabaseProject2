@@ -21,4 +21,11 @@ class InsertCarTst extends TestCase
         $this->assertEquals($OriginalCount+1,Car::count());
     }
 
+    public function testCarYearInteger()
+    {
+        $car = Car::inRandomOrder()->first();
+
+        $this->assertIsInt($car->Year);
+    }
+
 }
